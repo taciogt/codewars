@@ -8,11 +8,7 @@ import java.util.ArrayList;
  */
 public class NumberOfPeopleInTheBus {
     public static int countPassengers(ArrayList<int[]> stops) {
-        int result = 0;
-        for (int[] stop :stops) {
-            result += (stop[0] - stop[1]);
-
-        }
-        return result;
+        int[] reducedStopsStream = stops.stream().reduce(new int[]{0, 0}, (a, b) -> new int[]{a[0] + b[0], a[1] + b[1]});
+        return reducedStopsStream[0] - reducedStopsStream[1];
     }
 }
