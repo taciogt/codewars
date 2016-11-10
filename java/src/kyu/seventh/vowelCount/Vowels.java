@@ -1,12 +1,5 @@
 package kyu.seventh.vowelCount;
 
-import com.sun.deploy.util.StringUtils;
-
-import java.util.Arrays;
-import java.util.function.IntPredicate;
-import java.util.function.LongPredicate;
-import java.util.function.Predicate;
-
 /**
  * Created by tacio on 03/11/16.
  * https://www.codewars.com/kata/vowel-count/train/java
